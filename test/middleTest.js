@@ -16,4 +16,3 @@ describe("#middle", () => {
     assert.deepEqual(middle(inputValue), [3, 4]);
   });
 });
-console.log("test");
