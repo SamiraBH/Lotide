@@ -6,7 +6,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const countLetter = function(input) {
+const countLetters = function(input) {
   let result = {};
   for (let item of input) {
     if (result[item]) {
@@ -18,12 +18,14 @@ const countLetter = function(input) {
   return result;
 };
 
-const sentence1 = countLetter("this is a test");
-const sentence2 = countLetter("lighthouse in the house");
+const sentence1 = countLetters("this is a test");
+const sentence2 = countLetters("lighthouse in the house");
 
-// console.log(countLetter(sentence2));
-// console.log(countLetter(sentence1));
+// console.log(countLetters(sentence2));
+// console.log(countLetters(sentence1));
 
-assertEqual(sentence1["i"], 1);
-assertEqual(sentence2["n"], 1);
-assertEqual(sentence2[" "], 3);
+// assertEqual(sentence1["i"], 1);
+// assertEqual(sentence2["n"], 1);
+// assertEqual(sentence2[" "], 3);
+
+module.exports = countLetters;
