@@ -1,5 +1,5 @@
 const middle = require("../middle");
-// const assert = require("chai").assert;
+const assert = require("chai").assert;
 
 describe("#middle", () => {
   it("returns [3] for [1, 2, 3, 4, 5]", () => {
@@ -16,3 +16,4 @@ describe("#middle", () => {
     assert.deepEqual(middle(inputValue), [3, 4]);
   });
 });
+console.log("test");

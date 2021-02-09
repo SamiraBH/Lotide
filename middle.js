@@ -35,8 +35,10 @@ const middle = function(array) {
   return arr;
 };
 
-console.log(middle([1, 2, 3, 4, 5]));
-console.log(middle([1, 2]));
+// console.log(middle([1, 2, 3, 4, 5]));
+// console.log(middle([1, 2]));
 
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
-assertArraysEqual(middle([1, 2]), [1]);
+// assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
+// assertArraysEqual(middle([1, 2]), [1]);
+
+module.exports = middle;
